@@ -1,0 +1,51 @@
+h1 {
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, 'Geneva, Tahoma, sans-serif';
+}
+
+.btn-primary {
+    background:lightcyan;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, 'Geneva, Tahoma, sans-serif';
+}
+
+#food-input {
+    font-size: 15px;
+    border-color: black;
+}
+
+label {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#food-view {
+    float: left;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, 'Geneva, Tahoma, sans-serif';
+
+}
+
+.gif {
+    margin-right: 40px;
+}
+
+.gif img {
+    width: 200px;
+}
+
+body background{
+    opacity: 0.5;
+
+}
+

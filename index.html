@@ -3,45 +3,38 @@
 
 <head>
   <meta charset="utf-8">
-  <title>LET'S GET GIF CRAZY!</title>
+  <title>Giphy</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
-  <button id="cat-button">magical cat button</button>
-  <div id="images">
+<body background = 'assets/images/foodwallpaper.png'>
+    <h1> Food Giftastic!</h1>
+    <div class="container">
+      <div class="row">
+        <div class = "col-md-12" id="foodButtons">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class = "col-md-7">
+         <div class="row" id="food-view">
+         </div>
+      </div>
+      
+      <div class = "col-md-5" >
+          <form id="food-form">
+            <label for="food-input">Add More Foods </label>
+            <input type="text" id="food-input"><br>
+            <input id="find-foods" class="btn btn-primary" type="submit" value="Submit">
+          </form>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "assets/javascript/app.js"></script>
+  
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    // Event listener for our cat-button
-    $("#cat-button").on("click", function() {
-
-      // Storing our giphy API URL for a random cat image
-      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
-
-      // Perfoming an AJAX GET request to our queryURL
-      $.ajax({
-        url: queryURL,
-        method: "GET"
-      })
-
-      // After the data from the AJAX request comes back
-        .then(function(response) {
-
-        // Saving the image_original_url property
-          var imageUrl = response.data.image_original_url;
-
-          // Creating and storing an image tag
-          var catImage = $("<img>");
-
-          // Setting the catImage src attribute to imageUrl
-          catImage.attr("src", imageUrl);
-          catImage.attr("alt", "cat image");
-
-          // Prepending the catImage to the images div
-          $("#images").prepend(catImage);
-        });
-    });
-  </script>
 </body>
 
 </html>
