@@ -1,5 +1,7 @@
 # GifTastic
 
+Deployed: https://yaliu8.github.io/GifTastic/
+
 Objective: create a world where users can find gifs of their favorite foods!
 
 1. Create a web app that takes a topic (various foods in this case) and create buttons out of them.
@@ -12,6 +14,6 @@ Objective: create a world where users can find gifs of their favorite foods!
 
 Dependencies
 - Bootstrap
--Javascript
--CSS
--HTML
+- Javascript
+- CSS
+- HTML
